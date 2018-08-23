@@ -21,6 +21,8 @@ I am going to use the ud shortcut
 import updoon as ud
 ```
 
+Examples can be found at [oxyba.de](http://localhost:1313/updoon/)
+
 ### Versioning
 - X: Major changes for the package
 - Y: New function, class, module was added
@@ -39,7 +41,9 @@ An version `1.X.Y` might involve heavy refactoring, using base classes, etc. I p
 
 
 ### Function and Classes
-n/a
+* `quandl_apikey_set` -- Store Quandl API Key locally
+* `quandl_apikey` -- Read locally stored Quandl API Key.
+
 
 
 

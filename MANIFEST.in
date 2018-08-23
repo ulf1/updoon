@@ -1,4 +1,3 @@
 include *.txt
 include *.md
-recursive-include examples *.ipynb 
 recursive-include test *.py
