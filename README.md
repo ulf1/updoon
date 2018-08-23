@@ -41,8 +41,16 @@ An version `1.X.Y` might involve heavy refactoring, using base classes, etc. I p
 
 
 ### Function and Classes
+
+Quandl
+
 * `quandl_apikey_set` -- Store Quandl API Key locally
 * `quandl_apikey` -- Read locally stored Quandl API Key.
+
+FRED2
+
+* `fred_apikey_set` -- Store FRED API Key locally
+* `fred_apikey` -- Read locally stored FRED API Key.
 
 
 
