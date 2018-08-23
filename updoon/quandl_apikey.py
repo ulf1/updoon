@@ -1,5 +1,5 @@
 
-def quandl_apikey_set(apikey):
+def quandl_apikey_set(apikey, filename=None):
     """Store the Quandl Token in $HOME/.updoon_quandl 
 
     Parameters:
@@ -7,17 +7,32 @@ def quandl_apikey_set(apikey):
     apikey : str
         The API Key from the Quandl Website. 
         See https://www.quandl.com/account/api
+
+    filename : str
+        Absolute path to the text where the 
+        Quandl API Key is stored (Optional)
     
     """
-    import pathlib 
-    filename = str(pathlib.Path.home()) + "/.updoon_quandl";
+    #set default path
+    if filename is None:
+        import pathlib 
+        filename = str(pathlib.Path.home()) + "/.updoon_quandl";
+
+    #write string to file
     fileptr = open(filename, 'w');
     fileptr.write(apikey);
     fileptr.close();
     return None;
 
-def quandl_apikey():
+
+def quandl_apikey(filename=None):
     """ Returns the locally store QUandl API key from $HOME/.updoon_quandl 
+
+    Parameters:
+    -----------
+    filename : str
+        Absolute path to the text where the 
+        Quandl API Key is stored (Optional)
 
     Returns
     -------
@@ -35,8 +50,11 @@ def quandl_apikey():
     string.
         
     """
-    import pathlib 
-    filename = str(pathlib.Path.home()) + "/.updoon_quandl";
+    #set default path
+    if filename is None:
+        import pathlib 
+        filename = str(pathlib.Path.home()) + "/.updoon_quandl";
+
     errmsg2 = 'Please add your Quandl API Key with quandl_apikey_set("mysupersecrettoken")';
     try:
         fileptr = open(filename, 'r');
