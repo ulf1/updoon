@@ -21,8 +21,6 @@ I am going to use the ud shortcut
 import updoon as ud
 ```
 
-Examples can be found at [oxyba.de](http://localhost:1313/updoon/)
-
 ### Versioning
 - X: Major changes for the package
 - Y: New function, class, module was added
