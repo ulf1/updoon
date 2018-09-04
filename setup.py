@@ -5,11 +5,11 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name='updoon',
-      version='0.4.0',
+      version='0.4.1',
       description='classes and functions to download or scrape data',
       long_description=read('README.md'),
       long_description_content_type='text/markdown',
-      url='http://github.com/ulf1/updoon',
+      url='http://github.com/waalfisk/updoon',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
       license='MIT',
