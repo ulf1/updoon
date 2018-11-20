@@ -1,3 +1,5 @@
+v0.5.0, 2018-11-20 -- mechanism to store Alphavantage API key. And flake8 fixes
+
 v0.4.1, 2018-09-04 -- wrong link added
 v0.4.0, 2018-09-04 -- Repo moved to github.com/waalfisk
 
